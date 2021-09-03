@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoloio Website</title>
+    <style>
+    *{
+     box-sizing:border-box ;
+    }
+    .header{
+        background-color:skyblue;
+        color:white;
+        padding:1% 5%;
+        text-align:center;
+    }
+    .nav-menu{
+        padding:1% 5%;
+        background-color:cadetblue;
+    }
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    font-size:1.2rem;
+    padding:10px;
+    display:block;
+}
+.main{
+    padding:1% 5%;
+    background-color:turquoise;
+
+}
+.aside{
+    padding:1% 5%;
+    background-color: #39a4ac;
+    text-align:center;
+}
+.footer{
+    background-color:black;
+    color:white;
+}
+    
+    /*for desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]{
+    float:left;
+    padding:10px;    
+}
+.row::after{
+    content:'';
+    clear:both;
+    display:table;
+}
+@media screen and (max-width:768px){
+    [class*="col-"]{
+    width:100%;
+    }
+    .nav-menu a{
+        background-color:aqua;
+        text-align:center;
+        margin:10px;
+        border-radius: 10px;
+    }
+}
+   </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Obaidul Kader Asif</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">About Us </a>
+            <a href="#">Blog</a>
+            <a href="#">Popular Post</a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a Web Desiginer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, fuga?</p><br>
+            <p>Lorem ipsum dolor sit, amet consectetur 
+            adipisicing elit. Quo omnis at accusantium fuga quis veniam molestiae 
+            id ad tempora odit, illo dolore. Aliquid soluta commodi molestiae, esse perspiciatis est praesentium reiciendis, mollitia porro quis ratione quibusdam tenetur ipsam! Consequuntur 
+             exercitationem neque in architecto enim animi
+              quasi voluptatibus minima fugiat!
+            </p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur iste 
+            minima nostrum assumenda quasi aliquam doloremque veritatis atque animi.</p>
+        </div>
+        <div class="aside col-3">
+            <h2>What I Love?</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, modi?</P>
+            <h2>What I do?</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, modi?</P>
+            <h2>What I dont love Love?</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, modi?</P>
+            <h2>What I dont do?</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, modi?</P>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; My website</p>
+    </div>
+    
+</body>
+</html>
